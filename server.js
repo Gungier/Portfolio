@@ -1,36 +1,54 @@
-/**
- * module dependencies
- */
+// /**
+//  * module dependencies
+//  */
 
- var express = require('express');
- var routes = require('./client/node_modules/routes');
- var path = require('path');
+//  var express = require('express');
+// //  var routes = require('./routes');
+// //  var user =require('./')
+//  var path = require('path');
+ 
+//  var mongoose = require('mongoose');
 
- var app = express();
+//  var app = express();
 
- //setting environmental factors
- app.set('port', process.env.PORT || 5000);
- app.set('views', path.join(__dirname, 'views'));
- app.set('view engine', 'jade');
- app.use(express.loggger('dev'));
- app.use(express.json());
- app.use(express.urlencoded());
- app.use(express.methodOverride());
- app.use(app.router);
- app.use(express.static(path.join(__dirname, 'public')));
+//  //setting environmental factors
+//  var PORT = process.env.PORT || 3001;
 
- // dev only reqs
- if ('development' === app.get('env')) {
-     app.use(express.errorHandler());
- }
+//  app.set('views', path.join(__dirname, 'views'));
+//  app.set('view engine');
+ 
+//  // setup body-parser for json
+//  app.use(express.urlencoded({
+//     extended: true
+//   }));
+//   app.use(express.json());
+ 
+ 
+//   app.use(express.static(path.join(__dirname, 'public')));
 
- app.get('/', function(req, res) {
-     res.send('ok');
- });
+//  // dev only reqs
+//  if ('develoopment' == app.get('env')) {
+//      app.use(express.errorHandler());
+//      mongoose.connect('mongodb://localhost:27017/portfolio');
+//  };
 
- http.createServer(app).listen(app.get('port'), function(){
-     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-     PORT,
-     PORT
-   );
- });
+ 
+// //  if (process.env.NODE_ENV === "production") {
+// //     app.use(express.static("client/build"));
+// //     app.get("/*", function(req, res) {
+// //       res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// //     });
+// //   }
+  
+// //   else {
+// //     app.use(express.static(path.join(__dirname, '/client/public')));
+// //     app.get("/*", function(req, res) {
+// //       res.sendFile(path.join(__dirname, "./client/public/index.html"));
+// //     });
+// //   }
+
+// app.listen(app.get('port'), function(){
+//      console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+//      PORT
+//    );
+//  });

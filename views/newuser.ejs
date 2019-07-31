@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add User</title>
+    <link rel='stylesheet' href='../public/stylesheets/style.css' />
+</head>
+<body>
+    <h1><%= title %></h1>
+    <form id="forAddUser" name="adduser" method="post" action="/adduser">
+      <input id="inputFirstName" type="text" placeholder="first name" name="first_name" />
+      <input id="inputLastName" type="text" placeholder="last name" name="last_name" />
+      <input id="inputUserName" type="text" placeholder="username" name="username" />
+      <input id="inputUserEmail" type="text" placeholder="email" name="useremail" />
+      <button id="btnSubmit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

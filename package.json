@@ -1,20 +1,19 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "mongodb with react",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "https:///github.com/gungier/portfolio.git"
-  },
-  "author": "Gabriel Ungier",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongodb": "^3.2.7",
+    "monk": "^6.0.6",
+    "morgan": "~1.9.1",
     "nodemon": "^1.19.1"
   }
 }
